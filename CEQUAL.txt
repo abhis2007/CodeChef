@@ -1,0 +1,9 @@
+for __ in range(int(input())):
+    n=int(input())
+    st=list(map(int,input().split()))
+    length1=len(st)
+    length2=len(set(st))
+    if length2<length1:
+        print("Yes")
+    else:
+        print("No")

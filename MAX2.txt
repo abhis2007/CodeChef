@@ -1,0 +1,26 @@
+no_of_bites=int(input())
+n=int(input())
+w1=[]
+w2=[]
+w3=[]
+n=str(n)
+w1.append(n[-3])
+w1.append(n[-2])
+w1.append(n[-1])
+w1="".join(w1)
+w1=int(w1)
+if w1%8==0:
+    print(3)
+else:
+    w2.append(n[-2])
+    w2.append(n[-1])
+    w2="".join(w2)
+    w2=int(w2)
+    if w2%4==0:
+        print(2)
+    else:
+        w3.append(n[-1])
+        w3="".join(w3)
+        w3=int(w3)
+        if w3%2==0:
+            print(1)

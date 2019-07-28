@@ -1,0 +1,18 @@
+for __ in range(int(input())):
+    s=[]
+    r=[]
+    length=int(input())
+    r=list(input())
+    s=list(input())
+    zero1=r.count("0")
+    #print(zero1)
+    one1=r.count("1")
+    #print(one1)
+    zero2=s.count("0")
+    #print(zero2)
+    one2=s.count("1")
+    #print(one2)
+    if zero1==zero2 and one1==one2:
+        print("YES")
+    else:
+        print("NO")

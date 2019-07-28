@@ -1,0 +1,4 @@
+for __ in range(int(input())):
+    n=list(map(int,input().split()))
+    ans=n[0]%n[1]    
+    print(ans)

@@ -1,0 +1,17 @@
+for __ in range(int(input())):
+    count=0
+    n=int(input())
+    lists=list(map(int,input().split()))
+    original_number=sum(lists)
+    original_mean=(original_number)/n
+    for i in range(n):
+        new_mean=(original_number-lists[i])/(n-1)
+        if new_mean==original_mean:
+            print(i+1)
+            count+=1
+            break
+    if count==0:
+        print("Impossible")
+    
+    
+        

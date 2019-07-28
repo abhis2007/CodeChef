@@ -1,0 +1,4 @@
+test_case=int(input())
+for i in range(test_case):
+	lists=list(map(int,input().split()))
+	print(lists[0]+lists[1]) 

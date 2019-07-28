@@ -1,0 +1,4 @@
+for __ in range(int(input())):
+    n=int(input())
+    n=str(n)
+    print(int(n[0])+int(n[len(n)-1]))

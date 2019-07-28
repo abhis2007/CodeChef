@@ -1,0 +1,25 @@
+import math
+test_case=int(input())
+for __ in range(test_case):
+    proxy=0
+    present=0
+    n=int(input())
+    s=input()
+    for i in range(n):
+        if s[i]=="P":
+            present+=1
+    proxyneeded=math.ceil(0.75*n)-present
+    for j in range(2,len(s)-2):
+        if s[j]=="A":
+            if (s[j-1]=="P" or s[j-2]=="P") and (s[j+1]=="P" or s[j+2]=="P"):
+                proxy+=1
+    per=present/n
+    if per>=0.75:
+        print(0)
+    elif proxy<proxyneeded:
+        print(-1)
+    else:
+        print(proxyneeded)
+        
+        
+            

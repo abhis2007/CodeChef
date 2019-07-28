@@ -1,0 +1,25 @@
+test_case=int(input())
+for i in range(test_case):
+    count=-1
+    pair=0
+    nk=list(map(int,input().split()))
+    n=nk[0]
+    k=nk[1]
+    value_n=list(map(int,input().split()))
+    value_n.sort()
+    first=0
+    last=n-1
+    while(True):
+        if(first>=last):
+            print("No")
+            break
+        elif(value_n[first]+value_n[last]==k):
+            print("Yes")
+            pair+=1
+            break
+        elif(value_n[first]+value_n[last]>k):
+            last-=1
+        else:
+            first+=1
+
+        

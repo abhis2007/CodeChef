@@ -1,0 +1,10 @@
+list=input().split(' ')
+withdraw=int(list[0])
+current_balance=float(list[1])
+if(withdraw%5==0):
+    if(current_balance-0.5>=withdraw):
+        print(current_balance-0.5-withdraw)
+    else:
+        print(current_balance)
+else:
+    print(current_balance)

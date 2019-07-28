@@ -1,0 +1,30 @@
+test_case=int(input())
+for __ in range(test_case):
+    w=[]
+    m=[]
+    l=[]
+    p=[]
+    n=int(input())
+    for i in range(n):
+        strings=input()
+        w.append(strings)
+    for j in range(len(w)):
+        l=[]
+        m=[]
+        k=0
+        while(w[j][k]!=" "):
+            m.append(w[j][k])
+            k+=1
+        l=m
+        l="".join(l)
+        p.append(l)
+    for o in range(len(p)):
+        ct=p.count(p[o])
+        if ct>1:
+            print(w[o])
+        else:
+            print(p[o])
+        
+        
+            
+            

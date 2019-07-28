@@ -1,0 +1,9 @@
+lists=list(map(int,input().split()))
+count=0
+n=lists[0]
+k=lists[1]
+for I in range(n):
+	t=int(input())
+	if t%k==0:
+		count+=1
+print(count)

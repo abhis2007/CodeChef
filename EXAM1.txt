@@ -1,0 +1,23 @@
+test_case=int(input())
+for i in range(test_case):
+    n=int(input())
+    count=0
+    score=0
+    ct_answer=input()
+    answered=input()
+    i=0
+    while(i<=n-1):
+        if answered[i]==ct_answer[i]:
+            count+=1
+            score+=1
+            i=i+1
+        elif answered[i]=='N':
+            score+=0
+            i=i+1
+        else:
+            i=i+2
+    if count==n:
+        score=n
+    print(score)
+    
+        

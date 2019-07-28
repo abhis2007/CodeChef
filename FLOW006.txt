@@ -1,0 +1,8 @@
+for __ in range(int(input())):
+    n=int(input())
+    n=str(n)
+    sum=0
+    length=len(n)
+    for i in range(length):
+        sum=sum+int(n[i])
+    print(int(sum))

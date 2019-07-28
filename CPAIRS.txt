@@ -1,0 +1,20 @@
+def odd(n):
+    if n%2!=0:
+        return True
+    else:
+        return False
+def even(n):
+    if n%2==0:
+        return True
+    else:
+        return False
+for __ in range(int(input())):
+    count=0
+    n=int(input())
+    lists=list(map(int,input().split()))
+    for i in range(n-1):
+        for j in range(1+i,n):
+            if even(int(lists[i])) and odd(int(lists[j])):
+                count+=1
+    print(count)
+    
