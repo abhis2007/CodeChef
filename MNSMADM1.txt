@@ -1,0 +1,14 @@
+for __ in range(int(input())):
+    n=int(input())
+    c=0
+    w=[]
+    lists=list(map(int,input().split()))
+    lists2=list(map(int,input().split()))
+    for i in range(n):
+        score=(lists[i]*20)-(lists2[i]*10)
+        if(score<0):
+            w.append(0)
+        else:
+            w.append(score)
+    print(max(w))
+    

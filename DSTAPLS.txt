@@ -1,0 +1,21 @@
+for __ in range(int(input())):
+    c=0
+    lists=input().split(' ')
+    no_of_apples=int(lists[0])
+    no_of_boxes=int(lists[1])
+    in_box=no_of_apples//no_of_boxes
+    pl2=no_of_apples/no_of_boxes
+    if(in_box==no_of_boxes):
+        print("NO")
+    elif(no_of_boxes==1):
+        print("NO")
+    elif(in_box<no_of_boxes):
+        print("YES")
+    else:
+        r=in_box%no_of_boxes
+        if(r==0):
+            if(((in_box//no_of_boxes)*no_of_boxes)==in_box):
+                print("NO")
+        else:
+            print("YES")
+        

@@ -1,0 +1,35 @@
+for i in range(int(input())):
+    c=0
+    k=0
+    string=list(input())
+    length=len(string)
+    zero=string.count("0")
+    """if(length==zero):
+        print("LOSE")
+    else:"""
+    while(len(string)!=1):
+        if(c>len(string)-1):
+            break
+        elif(string[c]=="1"):
+            if(c>0 and c<=len(string)-1):
+                string.remove(string[c])
+                string[c-1]="1"
+                c-=1
+            else:
+                string.remove(string[c])
+                if(string[c]=="0"):
+                    string[c]="1"
+                else:
+                    string[c]="0"
+        else:
+            c+=1
+    #if k==0:
+    if(len(string)==string.count("0")):
+        print("LOSE")
+    elif(string[0]=='1'):
+        print("WIN")
+    else:
+        print("LOSE")
+            
+            
+        
